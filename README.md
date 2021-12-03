@@ -55,9 +55,9 @@ Read-RegistryPolicies [-Division <string>] [-Entries <string[]>]  [<CommonParame
 ```
 C:\PS> $RegistrySettings = Read-RegistryPolicies -Entries @('Software\Policies\Microsoft\Windows', 'Software\Policies\Microsoft\WindowsFirewall')
 
-C:\PS> $RegistrySettings = Read-RegistryPolicies -Divistion 'CurrentUser'
+C:\PS> $RegistrySettings = Read-RegistryPolicies -Division 'CurrentUser'
 
-C:\PS> $RegistrySettings = Read-RegistryPolicies -Divistion 'LocalMachine' -Entries @('Software\Policies\Microsoft\Windows', 'Software\Policies\Microsoft\WindowsFirewall')
+C:\PS> $RegistrySettings = Read-RegistryPolicies -Division 'LocalMachine' -Entries @('Software\Policies\Microsoft\Windows', 'Software\Policies\Microsoft\WindowsFirewall')
 ```
 
 ---
